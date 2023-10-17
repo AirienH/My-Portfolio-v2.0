@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Home</title>
+    <script src="https://kit.fontawesome.com/06ab47afa7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <div class="nav-links" id="navLinks">
+            <i class="fa-sharp fa-solid fa-xmark" onclick="navClose()"></i>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="projects.html">My Projects</a></li>
+            </ul>
+        </div>
+            </div>
+        </div>
+        <i class="fa-solid fa-bars" onclick="navOpen()"></i>
+    </nav>
+    <br>
+    <br>
+    <main>
+        <div class="card">
+            <div class="profile">
+                <img src="img/3A_PIC_HACLA-1.png" alt="img">
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <div class="profileTittle">
+                <h1>Hi, I am <span>Airien Hacla</span>!</h1>
+                <h1>I am a <span>Web Developer</span>.</h1>
+            </div>
+            <br>
+            <br>
+
+            <div class="cardbody-container">
+                <p>    I am currently studying Bachelor of Science in Computer Engineering at Pangasinan State University. I have experienced writing different programs mainly using C++, Java, Javascript, HTML, CSS, and Python.</p>
+                
+            </div>
+            <br>
+
+            <footer>
+                <div class="footer-container">
+                    <div class="button">
+                        <a href="Professional Resume Web Developer.pdf"><button>View Resume</button></a>
+                        <a href="mailto:airienikang@gmail.com"><button>Message Me</button></a>
+                    </div>
+                    <div class="footerline"></div>
+                    <div class="socialmedia">
+                        <a href="https://www.facebook.com/neiria.alcah"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/airienxx"><i class="fa-brands fa-instagram"></i></a>   
+                    </div>
+                </div>
+            </footer> 
+        </div>
+        <!-- JAVASCRIPT -->
+        <script>
+            const navLinks = document.getElementById("navLinks")
+            function navClose(){
+                navLinks.style.right = "-200px"
+            }
+            function navOpen(){
+                navLinks.style.right = "0"
+            }
+
+        </script>   
+    </main>
+</body>
+</html>
